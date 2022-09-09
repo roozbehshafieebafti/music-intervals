@@ -1,6 +1,6 @@
 import { convertToPardeh } from '../utils/convert-to-pardeh';
 
-interface IBaseAndInterval{
+export interface IBaseAndInterval{
     base: string,
     interval: string;
 }

@@ -1,10 +1,9 @@
-import  * as React from 'react';
-import { render } from 'react-dom';
-// components
-import App from './assets/app';
+import * as React from "react";
+import { createRoot } from 'react-dom/client';
+import App from './app';
 import './assets/app.scss';
 
-const root = document.getElementById('root') as HTMLDivElement;
 
-render(<App />,root);
-console.log("hello man")
+const container = document.getElementById('root') as HTMLDivElement;
+const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+root.render(<App />);
